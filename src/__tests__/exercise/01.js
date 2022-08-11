@@ -40,6 +40,8 @@ test('counter increments and decrements when the buttons are clicked', () => {
     decrement.dispatchEvent(
       new MouseEvent('click', {
         bubbles: true,
+        cancelable: true,
+        button: 0,
       }),
     ),
   )
